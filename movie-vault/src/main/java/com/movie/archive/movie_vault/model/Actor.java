@@ -7,9 +7,6 @@ import java.util.List;
 
 
 @Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 @Table(name = "actors")
 public class Actor {
 

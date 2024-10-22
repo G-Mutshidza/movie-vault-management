@@ -18,10 +18,12 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+
     @GetMapping("/all")
     public RequestEntity<User> getUserByUsername(@RequestParam String username) {
         Optional<User> user = userService.getUserByUsername(username);
 
         return user.map(RequestEntity::)
     }
+
 }
